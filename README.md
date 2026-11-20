@@ -1,31 +1,29 @@
-# WhoisDS Newly Registered Domains Feeds
+# WhoisDS Newly Registered Domain Feeds
 
-Public rolling blocklists generated from daily WhoisDS Newly Registered Domains archives.
+Public rolling blocklists generated from daily WhoisDS Newly Registered Domain (NRD) archives.
 
 ## Available feeds
 
-| Feed | Rolling window |
-|---|---:|
-| nrd-3days.txt | 3 days |
-| nrd-5days.txt | 5 days |
-| nrd-10days.txt | 10 days |
-| nrd-15days.txt | 15 days |
-| nrd-30days.txt | 30 days |
+| Feed | Rolling window | Raw download |
+|---|---:|---|
+| NRD 3-day | 3 calendar days | [feeds/nrd-3days.txt](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/nrd-3days.txt) |
+| NRD 5-day | 5 calendar days | [feeds/nrd-5days.txt](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/nrd-5days.txt) |
+| NRD 10-day | 10 calendar days | [feeds/nrd-10days.txt](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/nrd-10days.txt) |
+| NRD 15-day | 15 calendar days | [feeds/nrd-15days.txt](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/nrd-15days.txt) |
+| NRD 30-day | 30 calendar days | [feeds/nrd-30days.txt](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/nrd-30days.txt) |
 
-## Feed location
+Coverage and source-date information: [feeds/metadata.json](https://raw.githubusercontent.com/ldglance/opnsense-whoisds-nrd-feeds/main/feeds/metadata.json).
 
-All feeds are published under the `feeds/` directory.
+## Feed format
 
-## Feed behavior
+Each line is a domain entry. Every included domain is published as both its apex and a wildcard entry (for example, `example.com` and `*.example.com`). Entries are normalized, deduplicated, and sorted.
 
-- Contains all valid domains collected from WhoisDS daily archives.
-- No local TLD exclusions are applied.
-- Includes apex domains and wildcard subdomain entries.
-- Duplicate entries are removed.
-- Feed coverage depends on available daily archives.
-- Coverage information is provided in `feeds/metadata.json`.
+**No local firewall TLD or suffix exclusions are applied.** These feeds preserve all valid domains in the collected source archives; each consumer can apply its own policy.
 
-## Disclaimer
+A rolling feed is generated using the archives available for its calendar window. During initial population or after missing source dates, a feed may contain fewer than its requested number of days. Check `metadata.json` for `available_days`, `missing_dates`, and `complete` before relying on a particular window.
 
-Newly registered domain feeds can contain legitimate domains.
-Use appropriate caution when deploying these lists in production environments.
+## Source and caution
+
+Source data: [WhoisDS Newly Registered Domains](https://www.whoisds.com/newly-registered-domains).
+
+Newly registered domains are not automatically malicious. These lists can contain legitimate domains and may cause false positives. Review the data and test policies before using a feed to block user traffic. This repository is an independent community project and is not affiliated with or endorsed by WhoisDS or OPNsense.

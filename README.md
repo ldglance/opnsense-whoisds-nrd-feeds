@@ -1,6 +1,6 @@
 # WhoisDS Newly Registered Domain Feeds
 
-Public rolling blocklists generated from daily WhoisDS Newly Registered Domain (NRD) archives.
+Public rolling blocklists generated from daily WhoisDS Newly Registered Domain (NRD) archives. If you like this feed consider the non-free versions that whoisds has at (https://www.whoisds.com/pricing) which won't be restricted to the 70k daily limit lists
 
 ## Available feeds
 

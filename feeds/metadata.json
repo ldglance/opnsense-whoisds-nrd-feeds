@@ -1,19 +1,18 @@
 {
-  "anchor_date": "2026-11-25",
+  "anchor_date": "2026-11-26",
   "archive_retention_days": 31,
   "domain_filtering": "none; all valid source domains are retained",
   "feeds": {
     "nrd-10days.txt": {
       "available_days": 10,
       "complete": true,
-      "domains": 695529,
-      "entries": 1391058,
+      "domains": 696087,
+      "entries": 1392174,
       "missing_dates": [],
       "requested_days": 10,
-      "sha256": "4452d15ce81fdca69f22323e6b48a633fe9767e1269435f50b508969a48d5681",
-      "size_bytes": 24107896,
+      "sha256": "cf0d2f6ce381891c7fc8451b664b0b07fcaedc8c38efb05ffb12e17e9228bc84",
+      "size_bytes": 24173592,
       "source_dates": [
-        "2026-11-16",
         "2026-11-17",
         "2026-11-18",
         "2026-11-19",
@@ -22,22 +21,22 @@
         "2026-11-22",
         "2026-11-23",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
-      "window_end_date": "2026-11-25",
-      "window_start_date": "2026-11-16"
+      "window_end_date": "2026-11-26",
+      "window_start_date": "2026-11-17"
     },
     "nrd-15days.txt": {
       "available_days": 15,
       "complete": true,
-      "domains": 1044904,
-      "entries": 2089808,
+      "domains": 1044928,
+      "entries": 2089856,
       "missing_dates": [],
       "requested_days": 15,
-      "sha256": "2466fbec53f40f27e3f92b4f92ed1572b5d6d0185ac1edecda4b5cb01ce64945",
-      "size_bytes": 36558040,
+      "sha256": "985bbe51ce6dc6b3250b04cd01fe072f058a59e8c61abd9fe8b74f3203e6797f",
+      "size_bytes": 36594368,
       "source_dates": [
-        "2026-11-11",
         "2026-11-12",
         "2026-11-13",
         "2026-11-14",
@@ -51,22 +50,22 @@
         "2026-11-22",
         "2026-11-23",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
-      "window_end_date": "2026-11-25",
-      "window_start_date": "2026-11-11"
+      "window_end_date": "2026-11-26",
+      "window_start_date": "2026-11-12"
     },
     "nrd-30days.txt": {
       "available_days": 30,
       "complete": true,
-      "domains": 2092079,
-      "entries": 4184158,
+      "domains": 2092182,
+      "entries": 4184364,
       "missing_dates": [],
       "requested_days": 30,
-      "sha256": "642bcaa0276ba674dd13a1a0a3dda514650a0f66b018374dae12b32ba15f683f",
-      "size_bytes": 73279150,
+      "sha256": "174dee0657aa7dbe105c3ba8efccaabafb5e3f7d8201955b3744d4979542c656",
+      "size_bytes": 73347848,
       "source_dates": [
-        "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
@@ -95,49 +94,50 @@
         "2026-11-22",
         "2026-11-23",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
-      "window_end_date": "2026-11-25",
-      "window_start_date": "2026-10-27"
+      "window_end_date": "2026-11-26",
+      "window_start_date": "2026-10-28"
     },
     "nrd-3days.txt": {
       "available_days": 3,
       "complete": true,
-      "domains": 209921,
-      "entries": 419842,
+      "domains": 209927,
+      "entries": 419854,
       "missing_dates": [],
       "requested_days": 3,
-      "sha256": "091d37d04c19ee29b798d8ecd6853248d1a0a393c2b0c6c0578b45125b28e522",
-      "size_bytes": 7334314,
+      "sha256": "525616f4f7a62c20e919ad7b6c5449fbe430720366f6a76f60776788e67dfe57",
+      "size_bytes": 7335516,
       "source_dates": [
-        "2026-11-23",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
-      "window_end_date": "2026-11-25",
-      "window_start_date": "2026-11-23"
+      "window_end_date": "2026-11-26",
+      "window_start_date": "2026-11-24"
     },
     "nrd-5days.txt": {
       "available_days": 5,
       "complete": true,
-      "domains": 349047,
-      "entries": 698094,
+      "domains": 349790,
+      "entries": 699580,
       "missing_dates": [],
       "requested_days": 5,
-      "sha256": "3ea84621e48a041dff141044bb9f705cafef81bd29cd8b0471e5862e5833c16b",
-      "size_bytes": 12302718,
+      "sha256": "68beba23f09731ad3c8d04677f7673b2e98fc0d612408f91794e27213920d649",
+      "size_bytes": 12338190,
       "source_dates": [
-        "2026-11-21",
         "2026-11-22",
         "2026-11-23",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
-      "window_end_date": "2026-11-25",
-      "window_start_date": "2026-11-21"
+      "window_end_date": "2026-11-26",
+      "window_start_date": "2026-11-22"
     }
   },
-  "generated_at_utc": "2026-11-26T05:46:32+00:00",
+  "generated_at_utc": "2026-11-27T05:46:54+00:00",
   "generated_with_minimum_domains": 1000,
   "schema_version": 1,
   "source": "WhoisDS NRD daily archives from the existing OPNsense plugin",
